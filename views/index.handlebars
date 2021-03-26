@@ -1,0 +1,27 @@
+<h1 class="text-center mb-3">{{title}}</h1>
+
+<form action="/add-note" method="POST" class="mb-4">
+    <div class="form-group">
+        <label for="name">Title</label>
+        <input type="text" name="title" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="name">Author</label>
+        <input type="text" name="author" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="name">Content</label>
+        <textarea type="text" name="content" class="form-control"></textarea>
+    </div>
+    <input type="submit" value="Add Note" class="btn btn-primary" />
+</form>
+
+<h4>Notes</h4>
+<ul class="list-group">
+    {{#each notes}}
+        <li class="list-group-item">
+            <h6>{{this.title}} -  {{this.author}}</h6>
+            <p>{{this.content}}</p>
+        </li>
+    {{/each}}
+</ul>
