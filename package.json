@@ -1,0 +1,28 @@
+{
+  "name": "intro-to-backend",
+  "version": "1.0.0",
+  "description": "Introduction to backend with Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TuffyHacks/intro-to-backend.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Expresss",
+    "Backend"
+  ],
+  "author": "Brian Chung <brian@brianchung.co> (https://brianchung.co)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TuffyHacks/intro-to-backend/issues"
+  },
+  "homepage": "https://github.com/TuffyHacks/intro-to-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
